@@ -1,0 +1,50 @@
+<!-- 轮播图 -->
+<view class="selection">
+  <!-- 分别定义，是否显示点，自动播放，显示时间，切换时间 -->
+    <swiper indicator-dots="true" autoplay="ture" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}"> <!--imgUrls数组，下边循环显示每个item-->
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<!-- 布局 -->
+<view class='header'>
+    <text>精品推荐</text>
+    <text class="text-all">全部精品</text>
+</view>
+
+<!-- wx:for循环使用该布局 -->
+<view class='content'>
+    <view class='content-item' wx:for="{{contentitems}}">
+        <image src='../../images/medicine3.png' />
+        <view class='content-item-text'>
+        <text>
+        慧医慧药
+        </text>
+        </view>
+    </view>
+</view>
+
+<view><text>\n</text></view>
+
+<!-- 列表的整体布局  -->
+<view class='list-item' wx:for="{{listitem}}">
+    <view class='list-item-images'>
+        <image class="list-item-images-img" src='../../images/medicine2.png' />
+        <image class="avatar" src='../../images/medicine1.png' />
+    </view>
+</view>
+
+
+
+<!-- <view class=' list-item-text '>
+    <view class='list-item-text-title'> 
+    <text>这是标题</text>
+    </view>
+    <view class='list-item-text-content'> 
+    <text>这是内容，这是内容，这是内容，这是内容，这是内容，这是内容，这是内容，</text>
+    </view>    
+</view> -->

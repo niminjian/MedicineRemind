@@ -1,0 +1,25 @@
+<!--pages/db/db.wxml-->
+<!-- 输入药物名:
+<input bindinput="getName" class="input"></input>
+输入服药频率:
+<input bindinput="getFrequency" class="input"></input> -->
+<!-- <button type="primary" bindtap="addMedicine">添加药物</button> -->
+
+<view style="background-color: #FFFFFF;">
+    <scroll-view style="height: 1100rpx; margin-top: 5%;" scroll-y enable-back-to-top="true">
+        <!-- wx:for 用于单纯的数组循环 -->
+        <view wx:for="{{list}}">
+            <!-- 遍历列表的时候，微信自动取名字里面的每一条记录叫itme -->
+            <view class="medicineBoxItem" bindtap="goDetail" data-id="{{item._id}}">
+                <view class="medicineName" >药名: \n  {{item.name}}  </view>
+                <view class="medicineIntro">简介: \n  {{item.intro}}</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+
+<view class="ctlInputBtns">
+    <button class="inBtnH" bindtap="goBtnH">手动输入</button>
+    <view class="space"></view>
+    <button class="inBtnO">OCR识别</button>
+</view>

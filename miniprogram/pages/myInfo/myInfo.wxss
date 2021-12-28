@@ -1,0 +1,6 @@
+/* pages/myInfo/myInfo.wxss */
+.head_img{
+    height: 120rpx;
+    width: 120rpx;
+    border-radius: 50%;
+  }

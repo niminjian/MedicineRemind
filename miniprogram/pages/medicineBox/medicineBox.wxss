@@ -1,0 +1,59 @@
+/* pages/medicineBox/medicineBox.wxss */
+.medicineBoxItem{
+    height: 200rpx;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 35rpx;
+    padding: 10rpx;
+    border: #bbb solid 2rpx;
+    display: flex;
+    box-shadow: #bbb 4rpx 4rpx 4rpx 4rpx;
+}
+
+.medicineName{
+    width: 35%;
+    border: 1px #bbbbbb solid;
+    background-color: #bbb;
+    white-space:pre-wrap;
+    word-break:break-all;
+    margin-right: 2%;
+}
+
+.medicineIntro{
+    border: #bbb 1px solid;
+    width: 61%;
+    white-space:pre-wrap;
+    word-break:break-all;
+}
+
+.input{
+    border: 1rpx black solid;
+}
+
+.ctlInputBtns{
+    display: flex;
+}
+
+.inBtnH{
+    margin-top: 2%;
+    width: 40%;
+    background-color: #277DFF;
+    border-radius: 4px;
+    line-height:75px;
+    height: 75px;
+    border: black 1px solid;
+}
+
+.space{
+    width: 5%;
+}
+
+.inBtnO{
+    margin-top: 2%;
+    width: 40%;
+    background-color: #277DFF;
+    border-radius: 4px;
+    line-height:75px;
+    height: 75px;
+    border: black 1px solid;
+}

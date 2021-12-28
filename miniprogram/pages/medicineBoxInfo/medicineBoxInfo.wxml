@@ -1,0 +1,3 @@
+<text>药物名称{{medicine.name}}</text>
+<text decode>&nbsp;</text>
+<text>药物服用频率{{medicine.frequency}}</text>

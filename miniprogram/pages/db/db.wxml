@@ -1,0 +1,6 @@
+<!--pages/db/db.wxml-->
+<text>pages/db/db.wxml</text>
+<view wx:for="{{list}}">
+    <view>药品名字: {{item.name}} </view>
+    <view>复用次数: {{item.frequency}}/天</view>
+</view>

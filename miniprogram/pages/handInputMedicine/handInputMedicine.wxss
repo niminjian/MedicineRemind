@@ -1,0 +1,4 @@
+/* pages/handInputMedicine/handInputMedicine.wxss */
+input{
+    border: 1px solid gray;
+}

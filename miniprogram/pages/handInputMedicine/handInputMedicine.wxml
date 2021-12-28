@@ -1,0 +1,9 @@
+<!--pages/handInputMedicine/handInputMedicine.wxml-->
+<!-- <text>pages/handInputMedicine/handInputMedicine.wxml</text> -->
+输入药物名:
+<input bindinput="getName" class="input"></input>
+<view class="space"><text>\n</text></view>
+输入药物简介:
+<input bindinput="getIntro" class="input"></input>
+<view class="space"><text>\n</text></view>
+<button type="primary" bindtap="addMedicine">添加药物</button>

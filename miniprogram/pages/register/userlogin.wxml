@@ -1,0 +1,10 @@
+<!--pages/register/userlogin.wxml-->
+<!--index.wxml-->
+<view class="container">
+ <view class="usermotto">
+    <text class="user-motto">微信授权</text>
+  </view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登录 </button>
+  </view>
+</view>
